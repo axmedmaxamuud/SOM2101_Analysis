@@ -19,7 +19,7 @@ dir.create(file.path("output"), showWarnings = F)
 ###### Specify the input file locations and export language (should match label::<language> column in the kobo tool)
 params = list(
   assessment_name = "MSNA_2022",
-  data_location = "input/clean_data/clean_df_female.csv",
+  data_location = "input/clean_data/clean_data_final.csv",
   kobo_tool_location = "input/tool/SOM_REACH_MSNA_2022_Tool_v22_AM.xlsx",
   export_language = "label::English"
 )
@@ -48,7 +48,7 @@ analysis_output <- generate_results_table(data = data,
                                           weights.column = NULL,
                                           use_labels = T,
                                           labels_column = params$export_language,
-                                          "strata_group"
+                                          "strata_group", "idp_settlement"
                                           ## Add here the disaggregation variables separated by ,
 )
 

@@ -17,7 +17,7 @@ p_load(
 
 # load clean data
 #data <- openxlsx::read.xlsx("input/clean_data/draft_clean_data_2022-09-06.xlsx")
-data <- read.csv("input/clean_data/clean_data.csv", stringsAsFactors = FALSE)
+data <- read.csv("input/clean_data/clean_df_female.csv", stringsAsFactors = FALSE)
 
 
 questions <- import("input/tool/SOM_REACH_MSNA_2022_Tool_v22_AM.xlsx", sheet = "survey") %>% 
@@ -79,13 +79,16 @@ questions_to_remove <- c("start",
                          "X_index",
                          "interview_duration",
                          "CHECK_interview_duration",
-                         "uuid"
+                         "uuid",
+                         "district",
+                         "settlements",
+                         "settlement_other"
 )
 
 
 data <- data %>% select(-any_of(questions_to_remove))
 
-#write.csv(data, file = "input/clean_data/clean_data.csv", row.names = FALSE)
+#write.csv(data, file = "input/clean_data/clean_data_final.csv", row.names = FALSE)
 
 
 
