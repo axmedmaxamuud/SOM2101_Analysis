@@ -38,14 +38,13 @@ This project contains the aggregation and analysis scripts of the 2022 MSNA.
 <!-- ROADMAP -->
 ## Roadmap
 
-- [x] Aggregation
+- [x] Preliminary Analysis
     - [x] Select multiple
     - [x] Select multiple constraints
     - [x] Select one
     - [x] Numerical
     - [x] Skip logic
-    - [x] GPS coordinates
-- [x] Indicators
+- [x] PiN Estimations
 - [x] Output production
     - [x] Results table
     - [x] InDesign Data Merge
