@@ -21,7 +21,8 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-The Multi-Sectorial Needs Assessment (MSNA) aims to provide a wide coverage of the entire country in order to deliver the humanitarian community an up-to-date information for each cluster at populatioln group and providance levels. 
+Multi-Sectorial Needs Assessment (MSNA) are conducted with strong partnership at sector and inter-sector levels, by measuring a household’s overall severity of humanitarian needs per sector and population group. 
+
 
 This project contains the aggregation and analysis scripts of the 2022 MSNA. 
 
