@@ -21,7 +21,7 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-The Detailed Site Assessment (DSA) was initiated in coordination with the Camp Coordination and Camp Management (CCCM) Cluster in order to provide the humanitarian community with up-to-date information on the location of IDP sites, the conditions and capacity of the sites, and an estimate of the severity of humanitarian needs of residents.
+The Multi-Sectorial Needs Assessment (MSNA) aims to provide a wide coverage of the entire country in order to deliver the humanitarian community an up-to-date information for each cluster at populatioln group and providance levels. 
 
 This project contains the aggregation and analysis scripts of the 2022 MSNA. 
 
@@ -38,14 +38,13 @@ This project contains the aggregation and analysis scripts of the 2022 MSNA.
 <!-- ROADMAP -->
 ## Roadmap
 
-- [x] Aggregation
+- [x] Preliminary Analysis
     - [x] Select multiple
     - [x] Select multiple constraints
     - [x] Select one
     - [x] Numerical
     - [x] Skip logic
-    - [x] GPS coordinates
-- [x] Indicators
+- [x] PiN Estimations
 - [x] Output production
     - [x] Results table
     - [x] InDesign Data Merge
