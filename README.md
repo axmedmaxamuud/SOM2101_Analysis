@@ -13,7 +13,7 @@
 <h3 align="center">Somalia Multi-Sector Needs Assessment (MSNA) 2022</h3>
 
   <p align="center">
-    Aggregation and Analaysis scripts for SOM DSA 21 
+    Analaysis scripts for SOM MSNA 2022 
   </p>
 </div>
 
