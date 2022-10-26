@@ -12,12 +12,13 @@ p_load(
   sjmisc,
   koboquest,
   reshape2,
-  openxlsx
+  openxlsx,
+  readxl
 )
 
 # load clean data
-#data <- openxlsx::read.xlsx("input/clean_data/draft_clean_data_2022-09-06.xlsx")
-data <- read.csv("input/clean_data/clean_df_female.csv", stringsAsFactors = FALSE)
+data <- read_excel("input/data/REACH_SOM_MSNA_2022_Dataset.xlsx", sheet = "Clean_Data", guess_max = 50000)
+# <- read.csv("input/clean_data/clean_df_female.csv", stringsAsFactors = FALSE)
 
 
 questions <- import("input/tool/SOM_REACH_MSNA_2022_Tool_v22_AM.xlsx", sheet = "survey") %>% 
@@ -80,15 +81,16 @@ questions_to_remove <- c("start",
                          "interview_duration",
                          "CHECK_interview_duration",
                          "uuid",
-                         "district",
                          "settlements",
                          "settlement_other"
 )
 
 
-data <- data %>% select(-any_of(questions_to_remove))
+data <- data %>% select(-any_of(questions_to_remove)) %>% 
+  arrange(district, strata)
 
-#write.csv(data, file = "input/clean_data/clean_data_final.csv", row.names = FALSE)
+# Export final clean data
+write.xlsx(data, paste0("input/clean_data//msna-data_",today,".xlsx"))
 
 
 
