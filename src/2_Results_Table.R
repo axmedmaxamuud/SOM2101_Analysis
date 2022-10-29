@@ -18,8 +18,8 @@ dir.create(file.path("output"), showWarnings = F)
 
 ###### Specify the input file locations and export language (should match label::<language> column in the kobo tool)
 params = list(
-  assessment_name = "MSNA_2022_ResultsTable",
-  data_location = "input/clean_data/msna-data_2022-10-25.xlsx",
+  assessment_name = "Results_Table_HQ_Review",
+  data_location = "input/clean_data/msna_data_for_anlaysis_2022-10-28.xlsx",
   kobo_tool_location = "input/tool/SOM_REACH_MSNA_2022_Tool_v22_AM.xlsx",
   export_language = "label::English"
 )

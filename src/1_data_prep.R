@@ -17,7 +17,7 @@ p_load(
 )
 
 # load clean data
-data <- read_excel("input/data/REACH_SOM_MSNA_2022_Dataset.xlsx", sheet = "Clean_Data", guess_max = 50000)
+data <- read_excel("input/clean_data/final_clean_data_2022-10-28.xlsx", guess_max = 50000)
 # <- read.csv("input/clean_data/clean_df_female.csv", stringsAsFactors = FALSE)
 
 
@@ -90,7 +90,7 @@ data <- data %>% select(-any_of(questions_to_remove)) %>%
   arrange(district, strata)
 
 # Export final clean data
-write.xlsx(data, paste0("input/clean_data//msna-data_",today,".xlsx"))
+write.xlsx(data, paste0("input/clean_data/msna_data_for_anlaysis_",today,".xlsx"))
 
 
 
